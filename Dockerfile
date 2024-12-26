@@ -6,7 +6,7 @@ EXPOSE 80
 # Use the .NET 8 SDK image to build the application
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["sampleapp-docker/sampleapp.csproj", "sampleapp/"]
+COPY ["./sampleapp.csproj", "sampleapp/"]
 RUN dotnet restore "sampleapp/sampleapp.csproj"
 COPY . .
 WORKDIR "/src/sampleapp"
