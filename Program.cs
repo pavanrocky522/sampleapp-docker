@@ -3,7 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Configure Kestrel to listen on port 80
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(80); // Bind to all network interfaces on port 80
+    options.ListenAnyIP(8080); // Bind to all network interfaces on port 80
 });
 
 // Add services to the container.
