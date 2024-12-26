@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sampleapp\\sampleapp.csproj": {}
+    "C:\\sampleapp-docker\\sampleapp.csproj": {}
   },
   "projects": {
-    "C:\\sampleapp\\sampleapp.csproj": {
+    "C:\\sampleapp-docker\\sampleapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sampleapp\\sampleapp.csproj",
+        "projectUniqueName": "C:\\sampleapp-docker\\sampleapp.csproj",
         "projectName": "sampleapp",
-        "projectPath": "C:\\sampleapp\\sampleapp.csproj",
+        "projectPath": "C:\\sampleapp-docker\\sampleapp.csproj",
         "packagesPath": "C:\\Users\\pavanuser\\.nuget\\packages\\",
-        "outputPath": "C:\\sampleapp\\obj\\",
+        "outputPath": "C:\\sampleapp-docker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pavanuser\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["sampleapp.csproj", "/src/sampleapp/"]
 RUN dotnet restore "/src/sampleapp/sampleapp.csproj"
-COPY . .
+COPY . "/src/sampleapp/"
 WORKDIR "/src/sampleapp"
 RUN dotnet build "sampleapp.csproj" -c Release -o /app/build
 
