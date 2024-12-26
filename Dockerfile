@@ -6,8 +6,8 @@ EXPOSE 80
 # Use the .NET 8 SDK image to build the application
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["./sampleapp.csproj", "sampleapp/"]
-RUN dotnet restore "sampleapp/sampleapp.csproj"
+COPY ["sampleapp.csproj", "/src/sampleapp/"]
+RUN dotnet restore "/src/sampleapp/sampleapp.csproj"
 COPY . .
 WORKDIR "/src/sampleapp"
 RUN dotnet build "sampleapp.csproj" -c Release -o /app/build
